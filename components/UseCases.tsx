@@ -45,7 +45,7 @@ export default function UseCases() {
             Endless Possibilities
           </h2>
           <p className="font-body text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            From education to enterprise, maigeXR adapts to your needs
+            From education to enterprise, m{'{ai}'}geXR adapts to your needs
           </p>
         </div>
 

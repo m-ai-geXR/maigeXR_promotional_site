@@ -56,7 +56,7 @@ export default function GettingStarted() {
             Get Started in Minutes
           </h2>
           <p className="font-body text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
-            Choose your platform and start building immersive XR experiences
+            Choose your platform and start building immersive XR experiences with m{'{ai}'}geXR
           </p>
         </div>
 

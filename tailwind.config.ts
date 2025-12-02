@@ -24,6 +24,13 @@ const config: Config = {
         'heading': ['var(--font-outfit)', 'sans-serif'],
         'body': ['var(--font-inter)', 'sans-serif'],
       },
+      fontSize: {
+        // Override default sizes with better line-heights to prevent descenders from being cut off
+        '5xl': ['3rem', { lineHeight: '1.2' }],      // 48px
+        '6xl': ['3.75rem', { lineHeight: '1.2' }],   // 60px
+        '7xl': ['4.5rem', { lineHeight: '1.2' }],    // 72px
+        '8xl': ['6rem', { lineHeight: '1.2' }],      // 96px
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

@@ -10,10 +10,10 @@ export default function Overview() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-accent to-magenta-accent bg-clip-text text-transparent">
-            What is maigeXR?
+            What is m{'{ai}'}geXR?
           </h2>
           <p className="font-body text-lg sm:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-            maigeXR is a revolutionary AI-powered platform that transforms conversational
+            m{'{ai}'}geXR is a revolutionary AI-powered platform that transforms conversational
             input into immersive 3D experiences. Simply describe what you want to create,
             and our advanced AI generates production-ready XR applications across multiple
             platforms and frameworks. Making XR development accessible to everyone, from

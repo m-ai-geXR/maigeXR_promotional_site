@@ -24,7 +24,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "maigeXR - AI-Powered XR Development | From Conversation to Creation",
+  title: "m{ai}geXR - AI-Powered XR Development | From Conversation to Creation",
   description:
     "Transform natural language into immersive 3D experiences. AI-powered XR development platform for Android, iOS, and Web. Supporting Babylon.js, Three.js, React Three Fiber, and more.",
   keywords: [
@@ -39,11 +39,12 @@ export const metadata: Metadata = {
     "VR",
     "development",
     "conversational AI",
+    "m{ai}geXR",
     "maigeXR",
   ],
-  authors: [{ name: "maigeXR Team" }],
+  authors: [{ name: "m{ai}geXR Team" }],
   openGraph: {
-    title: "maigeXR - AI-Powered XR Development",
+    title: "m{ai}geXR - AI-Powered XR Development",
     description:
       "From conversation to creation - making XR development accessible to everyone",
     type: "website",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "maigeXR - AI-Powered XR Development",
+    title: "m{ai}geXR - AI-Powered XR Development",
     description:
       "Transform natural language into immersive 3D experiences",
   },

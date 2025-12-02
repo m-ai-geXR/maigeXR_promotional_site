@@ -30,7 +30,7 @@ export default function Footer() {
 
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-accent via-magenta-accent to-lime-accent bg-clip-text text-transparent">
-            Start Building with maigeXR
+            Start Building with m{'{ai}'}geXR
           </h2>
           <p className="font-body text-xl text-gray-300 mb-10">
             Join the future of XR development. Open source, privacy-first, and powered by AI.
@@ -76,7 +76,7 @@ export default function Footer() {
             {/* Logo and tagline */}
             <div className="md:col-span-1">
               <h3 className="font-display text-2xl font-bold bg-gradient-to-r from-cyan-accent to-magenta-accent bg-clip-text text-transparent mb-3">
-                maigeXR
+                {'m{ai}geXR'}
               </h3>
               <p className="font-body text-sm text-gray-400 leading-relaxed">
                 From conversation to creation. Making XR development accessible to everyone.
