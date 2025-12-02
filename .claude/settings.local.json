@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --version:*)",
+      "Bash(pnpm --version:*)",
+      "Bash(pnpm create:*)",
+      "Bash(pnpm install)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm build:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
