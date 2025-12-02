@@ -1,5 +1,7 @@
 "use client";
 
+import { siteConfig } from "@/config/site";
+
 export default function Hero() {
   const scrollToNext = () => {
     const nextSection = document.querySelector("#overview");
@@ -39,7 +41,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up">
           <a
-            href="https://github.com/maigeXR"
+            href={siteConfig.github.main}
             target="_blank"
             rel="noopener noreferrer"
             className="group relative px-8 py-4 bg-gradient-to-r from-cyan-accent to-magenta-accent text-space-navy font-heading font-bold text-lg rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 glow-cyan"

@@ -1,26 +1,28 @@
+import { siteConfig } from "@/config/site";
+
 export default function TechnologyStack() {
   const technologies = {
     "AI Providers": [
-      { name: "Together.ai", color: "text-purple-400" },
-      { name: "OpenAI", color: "text-green-400" },
-      { name: "Anthropic", color: "text-orange-400" },
-      { name: "Google AI", color: "text-blue-400" },
-      { name: "Ollama", color: "text-cyan-400" },
+      { name: "Together.ai", color: "text-purple-400", url: siteConfig.aiProviders.together },
+      { name: "OpenAI", color: "text-green-400", url: siteConfig.aiProviders.openai },
+      { name: "Anthropic", color: "text-orange-400", url: siteConfig.aiProviders.anthropic },
+      { name: "Google AI", color: "text-blue-400", url: siteConfig.aiProviders.google },
+      { name: "Ollama", color: "text-cyan-400", url: siteConfig.aiProviders.ollama },
     ],
     "3D Frameworks": [
-      { name: "Babylon.js", color: "text-red-400" },
-      { name: "Three.js", color: "text-white" },
-      { name: "React Three Fiber", color: "text-cyan-400" },
-      { name: "A-Frame", color: "text-pink-400" },
-      { name: "Reactylon", color: "text-yellow-400" },
+      { name: "Babylon.js", color: "text-red-400", url: siteConfig.frameworks.babylonjs },
+      { name: "Three.js", color: "text-white", url: siteConfig.frameworks.threejs },
+      { name: "React Three Fiber", color: "text-cyan-400", url: siteConfig.frameworks.reactThreeFiber },
+      { name: "A-Frame", color: "text-pink-400", url: siteConfig.frameworks.aframe },
+      { name: "Reactylon (Beta)", color: "text-yellow-400", url: siteConfig.frameworks.reactylon },
     ],
     "Platform Technologies": [
-      { name: "Kotlin", color: "text-purple-500" },
-      { name: "Swift", color: "text-orange-500" },
-      { name: "Next.js", color: "text-white" },
-      { name: "React", color: "text-cyan-500" },
-      { name: "TypeScript", color: "text-blue-500" },
-      { name: "Jetpack Compose", color: "text-green-500" },
+      { name: "Kotlin", color: "text-purple-500", url: siteConfig.platformTech.kotlin },
+      { name: "Swift", color: "text-orange-500", url: siteConfig.platformTech.swift },
+      { name: "Next.js", color: "text-white", url: siteConfig.platformTech.nextjs },
+      { name: "React", color: "text-cyan-500", url: siteConfig.platformTech.react },
+      { name: "TypeScript", color: "text-blue-500", url: siteConfig.platformTech.typescript },
+      { name: "Jetpack Compose", color: "text-green-500", url: siteConfig.platformTech.jetpackCompose },
     ],
   };
 
@@ -44,14 +46,17 @@ export default function TechnologyStack() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                 {techs.map((tech, techIndex) => (
-                  <div
+                  <a
                     key={techIndex}
-                    className="group glass-effect rounded-xl p-6 text-center hover:scale-110 transition-all duration-300 hover:glow-cyan"
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group glass-effect rounded-xl p-6 text-center hover:scale-110 transition-all duration-300 hover:glow-cyan cursor-pointer"
                   >
                     <div className={`font-heading text-lg font-semibold ${tech.color} group-hover:scale-110 transition-transform duration-300`}>
                       {tech.name}
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>

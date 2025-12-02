@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { siteConfig } from "@/config/site";
 
 export default function GettingStarted() {
   const [selectedPlatform, setSelectedPlatform] = useState<"android" | "ios" | "web">("web");
@@ -15,7 +16,7 @@ export default function GettingStarted() {
         "Start creating 3D scenes with voice or text",
       ],
       installCommand: "# Coming soon to Play Store",
-      repoLink: "https://github.com/maigeXR/android",
+      repoLink: siteConfig.platforms.android,
     },
     ios: {
       name: "iOS",
@@ -25,8 +26,8 @@ export default function GettingStarted() {
         "Configure your AI provider credentials",
         "Build and run on your device or simulator",
       ],
-      installCommand: "git clone https://github.com/maigeXR/ios.git",
-      repoLink: "https://github.com/maigeXR/ios",
+      installCommand: `git clone ${siteConfig.platforms.ios}.git`,
+      repoLink: siteConfig.platforms.ios,
     },
     web: {
       name: "Web",
@@ -36,8 +37,8 @@ export default function GettingStarted() {
         "Add your AI provider API key to .env",
         "Run the development server and start creating",
       ],
-      installCommand: "git clone https://github.com/maigeXR/web.git && cd web && pnpm install",
-      repoLink: "https://github.com/maigeXR/web",
+      installCommand: `git clone ${siteConfig.platforms.web}.git && cd WebMaigeXr && pnpm install`,
+      repoLink: siteConfig.platforms.web,
     },
   };
 

@@ -1,11 +1,13 @@
+import { siteConfig } from "@/config/site";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const links = {
     platforms: [
-      { name: "Android", href: "https://github.com/maigeXR/android" },
-      { name: "iOS", href: "https://github.com/maigeXR/ios" },
-      { name: "Web", href: "https://github.com/maigeXR/web" },
+      { name: "Android", href: siteConfig.platforms.android },
+      { name: "iOS", href: siteConfig.platforms.ios },
+      { name: "Web", href: siteConfig.platforms.web },
     ],
     resources: [
       { name: "Documentation", href: "#" },
@@ -13,9 +15,9 @@ export default function Footer() {
       { name: "API Reference", href: "#" },
     ],
     community: [
-      { name: "GitHub", href: "https://github.com/maigeXR" },
-      { name: "Discussions", href: "https://github.com/orgs/maigeXR/discussions" },
-      { name: "Issues", href: "https://github.com/maigeXR/maigeXR/issues" },
+      { name: "GitHub", href: siteConfig.github.main },
+      { name: "Discussions", href: siteConfig.github.discussions },
+      { name: "Issues", href: siteConfig.github.issues },
     ],
   };
 
@@ -36,7 +38,7 @@ export default function Footer() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
-              href="https://github.com/maigeXR"
+              href={siteConfig.github.main}
               target="_blank"
               rel="noopener noreferrer"
               className="group px-8 py-4 bg-gradient-to-r from-cyan-accent to-magenta-accent text-space-navy font-heading font-bold text-lg rounded-lg transition-all duration-300 hover:scale-105 glow-cyan inline-flex items-center gap-2"

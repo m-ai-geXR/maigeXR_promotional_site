@@ -1,3 +1,5 @@
+import { siteConfig } from "@/config/site";
+
 export default function PlatformShowcase() {
   const platforms = [
     {
@@ -15,9 +17,9 @@ export default function PlatformShowcase() {
         "Material Design 3 UI",
       ],
       techStack: "Kotlin • Babylon.js • Jetpack Compose",
-      status: "Production Ready",
-      statusColor: "from-green-400 to-green-600",
-      link: "https://github.com/maigeXR/android",
+      status: "Beta",
+      statusColor: "from-yellow-400 to-yellow-600",
+      link: siteConfig.platforms.android,
     },
     {
       name: "iOS",
@@ -36,7 +38,7 @@ export default function PlatformShowcase() {
       techStack: "Swift • SceneKit • ARKit • SwiftUI",
       status: "Beta",
       statusColor: "from-yellow-400 to-yellow-600",
-      link: "https://github.com/maigeXR/ios",
+      link: siteConfig.platforms.ios,
     },
     {
       name: "Web",
@@ -54,9 +56,9 @@ export default function PlatformShowcase() {
         "PWA capabilities",
       ],
       techStack: "Next.js • React • Three.js • R3F",
-      status: "Production Ready",
-      statusColor: "from-green-400 to-green-600",
-      link: "https://github.com/maigeXR/web",
+      status: "Beta",
+      statusColor: "from-yellow-400 to-yellow-600",
+      link: siteConfig.platforms.web,
     },
   ];
 
