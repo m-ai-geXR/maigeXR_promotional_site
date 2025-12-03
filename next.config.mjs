@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/maigeXR_promotional_site' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/' : '',
 };
 
 export default nextConfig;
