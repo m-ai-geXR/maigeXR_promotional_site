@@ -5,6 +5,8 @@ immersive 3D experiences across Android, iOS and Desktop."*
 
 Static single-page site, deployed to Vercel.
 
+[![Sponsor seacloud9](https://img.shields.io/badge/Sponsor-seacloud9-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/seacloud9)
+
 > **Read this first.** `index.html` here is **byte-identical** to the one in the
 > sibling `maige_xr_site/` repository, but these are two separate repositories
 > with separate remotes:
